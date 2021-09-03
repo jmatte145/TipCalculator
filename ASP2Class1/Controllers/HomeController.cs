@@ -9,6 +9,7 @@ namespace TipCalculator.Controllers
 {
     public class HomeController : Controller
     {
+        // Creates the ViewBag variables and sets them to 0 on startup.  // 
         [HttpGet]
         public IActionResult Index()
         {
@@ -18,6 +19,7 @@ namespace TipCalculator.Controllers
             return View();
         }
 
+        // Takes input from the model and inserts it into the view if the criteria is met. //
         [HttpPost]
         public IActionResult Index(TipCalcModel model)
         {

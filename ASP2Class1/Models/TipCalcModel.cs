@@ -14,6 +14,8 @@ namespace TipCalculator.Models
         public decimal? Tip15 { get; set; }
         public decimal? Tip20 { get; set; }
         public decimal? Tip25 { get; set; }
+
+        // Methods for Calculating the Tip based on MealCost. //
         public decimal? CalculateTip15()
         {
             Tip15 = MealCost * (15/100);
