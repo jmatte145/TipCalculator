@@ -18,19 +18,19 @@ namespace TipCalculator.Models
         // Methods for Calculating the Tip based on MealCost. //
         public decimal? CalculateTip15()
         {
-            Tip15 = MealCost * (15/100);
+            Tip15 = MealCost * 0.15m;
             return Tip15;
         }
 
         public decimal? CalculateTip20()
         {
-            Tip20 = MealCost * (20 / 100);
+            Tip20 = MealCost * 0.20m;
             return Tip20;
         }
 
         public decimal? CalculateTip25()
         {
-            Tip25 = MealCost * (25 / 100);
+            Tip25 = MealCost * 0.25m;
             return Tip25;
         }
     }
